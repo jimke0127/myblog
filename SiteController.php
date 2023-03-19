@@ -97,16 +97,7 @@ class SiteController extends AController
     public function actionLogout()
     {
 
-        if (Yii::$app->user->identity->logout()) {
-
-            $user = Yii::$app->user->identity->getUser();
-
-            $user->clearDeviceId();
-
-            return Yii::t('api', '退出成功');
-        }
-
-        return $this->setResponse(Yii::t('api', '退出失败'));
+       return "test"
     }
 
 
