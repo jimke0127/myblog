@@ -109,15 +109,5 @@ class SiteController extends AController
         return $this->setResponse(Yii::t('api', '退出失败'));
     }
 
-    /**
-     * 页面404输出空
-     *
-     * @return string
-     */
-    public function actionError()
-    {
-
-        return '';
-    }
 
 }
